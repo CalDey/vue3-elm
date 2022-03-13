@@ -2,6 +2,7 @@ import Axios from 'axios'
 import { Toast } from 'vant'
 
 const baseURL = 'http://localhost:3000'
+// const baseURL = 'https://elm.cangdu.org'
 
 const axios = Axios.create({
     baseURL,

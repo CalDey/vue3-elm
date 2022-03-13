@@ -39,12 +39,12 @@
                         <span class="text-1xs">商家属性（可以多选）</span>
                         <div>
                             <van-checkbox-group v-model="activityChecked" direction="horizontal" @change="selectActivity">
-                                <van-checkbox v-for="(item, index) in activity" :key="index" :name="item" class="flex items-center pl-2 w-1/3 h-8 border-2 text-xxs" :class="support_ids.indexOf(item.id) === -1 ? '' : 'border-blue-300'">
+                                <van-checkbox v-for="(item, index) in activity" :key="index" :name="item" class="flex pl-2 w-1/3 h-8 border-2 text-xxs" :class="support_ids.indexOf(item.id) === -1 ? '' : 'border-blue-300'">
                                     <template #icon>
-                                        <svg v-if="support_ids.indexOf(item.id) !== -1" class="w-4 h-4 text-xxs">
+                                        <svg v-if="support_ids.indexOf(item.id) !== -1" class="w-4 h-4 mb-2 text-xxs">
                                             <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'#selected'"></use>
                                         </svg>
-                                        <div v-else class="p-2 flex justify-center items-center w-4 h-4 text-xxs border-2 rounded" :style="{color: '#' + item.icon_color, borderColor: '#' + item.icon_color}">{{item.icon_name}}</div>
+                                        <div v-else class="flex justify-center items-center w-4 h-4 text-xxs border-2 rounded" :style="{color: '#' + item.icon_color, borderColor: '#' + item.icon_color}">{{item.icon_name}}</div>
                                     </template>
                                     {{item.name}}
                                 </van-checkbox>

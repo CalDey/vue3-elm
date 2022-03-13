@@ -98,9 +98,12 @@ export default {
             // 若购物车中存在该商品且数量大于0
             if(item[food_id]['num'] > 0) {
                 item[food_id]['num']--
+                if(item[food_id]['num'] == 0) {
+                    delete item[food_id]
+                }
             }else{
                 // 商品数量为0，清空当前商品数据
-                item[food_id] = null
+                delete item[food_id]
             }
         }
         state.cartList = {...cart}

@@ -20,6 +20,7 @@ export default defineConfig({
     extensions: ['.vue', '.js', '.jsx', '.json']
   },
   server: {
+    host:'0.0.0.0',
     proxy: {
       '/v1': {
         target: 'http://cangdu.org:8001',

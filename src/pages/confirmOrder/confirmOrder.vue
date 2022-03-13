@@ -54,6 +54,13 @@
                         <span class="text-gray-500">¥{{item.price}}</span>
                     </div>
                 </li>
+                <div v-if="orderData.cart.extra" class="text-1xs flex justify-between py-1 text-gray-500">
+                    <span>{{orderData.cart.extra[0].name}}</span>
+                    <div>
+                        <span></span>
+                        <span>¥ {{orderData.cart.extra[0].price}}</span>
+                    </div>
+                </div>
                 <div class="text-1xs flex justify-between py-1 text-gray-500">
                     <span>配送费</span>
                     <div>

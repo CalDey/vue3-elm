@@ -279,7 +279,8 @@
                         <li v-for="(item, index) in selectedFoods.specifications[0].values" :key="index" class="mr-2 mb-2 p-1 border rounded-sm"
                         :class="specsIndex == index ? 'text-blue-500 border-blue-500' : ''"
                         @click="chooseSpecs(index)">
-                            {{item}}
+                            <span v-if="item !== ''">{{item}}</span>
+                            <span v-else>空</span>
                         </li>
                     </ul>
                 </div>
