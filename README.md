@@ -23,5 +23,18 @@ vue3 + vite + tailwindCSS + vant + vuex + vue-router + axios
 # 线上Demo
 http://182.92.202.161:3000/  
 (请使用Chrome浏览器移动端模式查看)  
-由于axios跨域问题无法携带cookies导致验证码失效，因此线上Demo暂不开放登录注册功能
+由于axios跨域问题无法携带cookies导致验证码失效，因此线上Demo暂不开放登录注册功能  
 请本地启动项目体验完整功能
+
+# 项目运行
+```
+本项目使用yarn进行依赖管理
+yarn install
+yarn dev
+访问 http://localhost:3000/
+```
+
+# 说明
+此项目接口全部来源于[node-elm](https://github.com/bailicangdu/node-elm/blob/master/API.md)，若接口出现异常请去原项目提Issue  
+
+> 如果有任何问题，欢迎提Issue👏 如果本项目对您有帮助 麻烦点个star支持一下✨ 谢谢！ ^_^
