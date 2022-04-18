@@ -23,8 +23,6 @@ vue3 + vite + tailwindCSS + vant + vuex + vue-router + axios
 # 线上Demo
 http://182.92.202.161:3000/  
 (请使用Chrome浏览器移动端模式查看)  
-由于axios跨域问题无法携带cookies导致验证码失效，因此线上Demo暂不开放登录注册功能  
-请本地启动项目体验完整功能
 
 # 项目运行
 ```
@@ -38,3 +36,23 @@ yarn dev
 此项目接口全部来源于[node-elm](https://github.com/bailicangdu/node-elm/blob/master/API.md)，若接口出现异常请去原项目提Issue  
 
 > 如果有任何问题，欢迎提Issue👏 如果本项目对您有帮助 麻烦点个star支持一下✨ 谢谢！ ^_^
+
+# 部分页面展示
+<div style="display:flex;justify-content:center">
+  <span>
+    <img width="275" alt="截屏2022-04-17 下午11 12 38" src="https://user-images.githubusercontent.com/56568751/163741469-cf32331a-b755-47b5-928c-deeaf800b9ec.png">
+  </span>
+  <span>
+     <img width="273" alt="截屏2022-04-17 下午11 17 56" src="https://user-images.githubusercontent.com/56568751/163741569-55c22593-7155-4006-bff5-c52aa8a3d01c.png">
+  </span>
+  <span>
+      <img width="273" alt="截屏2022-04-17 下午11 18 20" src="https://user-images.githubusercontent.com/56568751/163741987-e12cdd86-7b15-4b87-9ff2-3ba448dfed72.png">
+  </span>
+  <span>
+      <img width="272" alt="截屏2022-04-17 下午11 18 58" src="https://user-images.githubusercontent.com/56568751/163742059-0c6b56ed-f30e-4d62-9751-f90b76a9b209.png">
+  </span>
+  <span>
+      <img width="273" alt="截屏2022-04-17 下午11 19 21" src="https://user-images.githubusercontent.com/56568751/163742134-659ab3fe-ec05-43d2-98fe-1a228413f0f2.png">
+  </span>
+</div>
+
